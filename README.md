@@ -52,7 +52,7 @@ pip install stock_data_lib
 
 1. What compromises did you make due to time constraints?
 
-- Due to time constraints, I limited the implementation to basic functionalities (lookup, min, max) and did not implement features such as:
+Due to time constraints, I limited the implementation to basic functionalities (lookup, min, max) and did not implement features such as:
 
 - Caching expiration: The cache never clears or updates unless the program restarts.
 
@@ -66,7 +66,7 @@ pip install stock_data_lib
 
 2. How would you approach versioning of this library?
 
-- I would follow Semantic Versioning (SemVer):
+I would follow Semantic Versioning (SemVer):
 
 - Major version: For incompatible API changes.
 
