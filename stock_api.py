@@ -11,8 +11,7 @@ class StockAPI:
 
     def _fetch_data(self, symbol):
         """Fetches daily time series data for the given symbol from Alpha Vantage."""
-        
-        
+
         params = {
             "function": "TIME_SERIES_DAILY",
             "symbol": symbol,

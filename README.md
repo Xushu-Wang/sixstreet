@@ -1,26 +1,15 @@
-### Software
+### Software - Stock Data Library
 
-# Stock Data Library - Packaging and Distribution
 
-## Building the Package
-
-### Prerequisites
-- Python 3.6 or higher
-- pip package manager
-- setuptools and wheel packages
-
-### 1. Create setup.py
-```python
+1. Create setup.py
+'''python
 from setuptools import setup
-
-
-'''
 
 setup(
     name="stock_data_lib",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Andy Wang",
+    author_email="andy-xushuwang@outlook.com",
     description="Python library for stock data from Alpha Vantage",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
@@ -37,9 +26,24 @@ setup(
 '''
 
 
+2. Build the Package
 
+'''
+python setup.py sdist bdist_wheel
+'''
 
+3. Publishing to PyPI and Install from PyPI
 
+'''
+pip install twine
+
+twine upload --repository testpypi dist/*
+
+twine upload dist/*
+
+pip install stock_data_lib
+
+'''
 
 
 
