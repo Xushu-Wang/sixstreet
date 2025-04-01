@@ -2,7 +2,8 @@
 
 
 1. Create setup.py
-'''python
+
+```
 from setuptools import setup
 
 setup(
@@ -23,7 +24,7 @@ setup(
     ],
 )
 
-'''
+```
 
 
 2. Build the Package
