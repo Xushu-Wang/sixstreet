@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="stock_data_lib",
-    version="0.1.0",
+    version="1.0.0",
     author="Andy Wang",
     author_email="andy-xushuwang@outlook.com",
     description="A Python library for stock data from Alpha Vantage",

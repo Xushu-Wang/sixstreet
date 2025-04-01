@@ -48,7 +48,6 @@ pip install stock_data_lib
 
 
 
-
 ### Discussion
 
 1. What compromises did you make due to time constraints?
@@ -93,11 +92,9 @@ The library could be published to PyPI (Python Package Index) by following these
 
 4. How would you design this if it was going to be a service rather than a library?
 
-If it was a service:
+- API Design: Implement a RESTful API using frameworks like FastAPI or Flask.
 
-API Design: Implement a RESTful API using frameworks like FastAPI or Flask.
-
-Endpoints:
+- Endpoints:
 
 /lookup: Accepts symbol and date as parameters.
 
@@ -105,17 +102,15 @@ Endpoints:
 
 /max: Accepts symbol and n as parameters.
 
-Caching: Use Redis or Memcached for better efficiency and persistence.
+- Caching: Use Redis or Memcached for better efficiency and persistence.
 
-Rate Limiting: Apply rate-limiting to prevent overuse of the Alpha Vantage API.
+- Rate Limiting: Apply rate-limiting to prevent overuse of the Alpha Vantage API.
 
-Deployment: Deploy on a cloud platform such as AWS, GCP, or Azure with auto-scaling enabled.
+- Deployment: Deploy on a cloud platform such as AWS, GCP, or Azure with auto-scaling enabled.
 
 5. Please include any other comments about your implementation.
 
 The implementation is intentionally kept simple to focus on core functionality. It demonstrates the ability to interact with an external API and process the returned data in a useful manner.
-
-Using classes allows for easy extension of functionality in the future.
 
 6. How much time did you spend on this exercise?
 
@@ -123,9 +118,5 @@ Approximately 1.5 hours including implementation, testing, and write-up.
 
 7. Please include any general feedback you have about the exercise.
 
-This was a well-defined exercise that required careful thought around API usage and handling rate limits.
-
-Adding a requirement to implement automated tests would be a helpful addition.
-
-Overall, the exercise was engaging and provided a good opportunity to showcase software design skills.
+This was a well-defined exercise that required careful thought around API usage, handling rate limits, and packaging 
 
