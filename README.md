@@ -29,13 +29,13 @@ setup(
 
 2. Build the Package
 
-'''
+```
 python setup.py sdist bdist_wheel
-'''
+```
 
 3. Publishing to PyPI and Install from PyPI
 
-'''
+```
 pip install twine
 
 twine upload --repository testpypi dist/*
@@ -44,7 +44,7 @@ twine upload dist/*
 
 pip install stock_data_lib
 
-'''
+```
 
 
 
